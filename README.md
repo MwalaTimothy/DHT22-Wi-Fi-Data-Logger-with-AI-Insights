@@ -87,10 +87,16 @@ http.POST(requestBody);
 ```
 Connecting to WiFi...
 Connected to WiFi
-Temperature: 24.5°C, Humidity: 60%
-Average Temp: 24.2°C, Min: 23.5°C, Max: 25.0°C
-Heat Index: 25.3°C
-Response from AI: "The temperature trend is stable. Consider checking for sudden drops."
+ Request Body: {"model":"gpt-3.5-turbo","messages":[{"role":"system","content":"You are a helpful assistant."},{"role":"user","content":"Analyze the following statistical data: \nTemperature (Avg/Min/Max): 32.97°C / 32.90°C / 33.00°C\nHumidity (Avg/Min/Max): 99.90% / 99.90% / 99.90%\nHeat Index: 30.66°C\nProvide insights into trends, anomalies, and any recommendations."}]}
+00:00:23.550 -> Response: {
+  "role": "assistant",
+23:57:36.627 ->         "content": "Based on the provided statistical data:\n\n1.
+Temperature: The average temperature is 31.92°C, with a narrow range between the minimum (31.60°C) and maximum (32.20°C) temperatures. This suggests a relatively stable temperature range.\n\n2.
+Humidity: The humidity levels are very high, with an average, minimum, and maximum of 99.90%. This indicates extremely humid conditions.\n\n3.
+Heat Index: The heat index, which takes into account both temperature and humidity, is slightly lower at 29.51°C compared to the actual temperature. This suggests that despite the high humidity, the perceived temperature may be slightly lower due to the influence of relative humidity.\n\nInsights:\n- The high humidity levels coupled with relatively stable temperatures indicate a humid and warm climate.\n-
+The heat index being lower than the actual temperature implies that the perceived temperature may not feel as hot due to the high humidity levels.\n\nRecommendations:\n- Stay hydrated: High humidity can make temperatures feel hotter, so it's essential to stay hydrated.\n- Use fans or air conditioning: Given the high humidity levels, using fans or air conditioning can help improve comfort levels.\n- Monitor for heat-related illnesses: Due to the high humidity, there is an increased risk of heat-related illnesses, so it's important to be aware of symptoms and take necessary precautions.\n- Consider wearing lightweight, breathable clothing: In such humid conditions, wearing light and breathable fabrics can help in staying comfortable.\n\n
+Overall, the data suggests a humid and warm environment with high humidity levels. By following the recommendations mentioned above, individuals can better cope with these conditions.",
+23:57:36.673 ->         "
 ```
 
 ## Potential Improvements
