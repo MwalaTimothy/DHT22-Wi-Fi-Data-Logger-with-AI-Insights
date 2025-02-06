@@ -12,7 +12,7 @@ This project is an ESP32-C3-Mini-based system that reads temperature and humidit
 - Outputs results via **serial monitor**.
 
 ## Hardware Requirements
-- **ESP32 or Arduino-compatible board with Wi-Fi**
+- **([Carenuity ESP32_C3-Mini](https://www.chipglobe.shop/en))**
 - **DHT22 (AM2302) Temperature & Humidity Sensor**
 - **Jumper wires**
 -  **Breadboard**
@@ -87,7 +87,9 @@ http.POST(requestBody);
 ```
 Connecting to WiFi...
 Connected to WiFi
- Request Body: {"model":"gpt-3.5-turbo","messages":[{"role":"system","content":"You are a helpful assistant."},{"role":"user","content":"Analyze the following statistical data: \nTemperature (Avg/Min/Max): 32.97°C / 32.90°C / 33.00°C\nHumidity (Avg/Min/Max): 99.90% / 99.90% / 99.90%\nHeat Index: 30.66°C\nProvide insights into trends, anomalies, and any recommendations."}]}
+ Request Body: {"model":"gpt-3.5-turbo","messages":[{"role":"system","content":"You are a helpful assistant."},{"role":"user","content":"Analyze the following statistical data: \n
+Temperature (Avg/Min/Max): 32.97°C / 32.90°C / 33.00°C\nHumidity (Avg/Min/Max): 99.90% / 99.90% / 99.90%\nHeat Index: 30.66°C\n
+Provide insights into trends, anomalies, and any recommendations."}]}
 00:00:23.550 -> Response: {
   "role": "assistant",
 23:57:36.627 ->         "content": "Based on the provided statistical data:\n\n1.
